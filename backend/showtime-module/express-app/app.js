@@ -30,7 +30,7 @@ app.use(function (req, res, next) {
 app.use('/showtime', require('./routes/showTimes'))
 app.use('/theaters',  require('./routes/cities'))
 
-mongoose.connect("mongodb+srv://pi:GAtech321@mongodb-yqc5g.mongodb.net/showtimes", { useNewUrlParser: true }, () => {
+mongoose.connect(process.env.DB_CONNECTION_STRING, { useNewUrlParser: true }, () => {
     console.log("Connected to DB")
 });
 
