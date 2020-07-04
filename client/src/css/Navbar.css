@@ -1,0 +1,145 @@
+#root .navbar-container{
+    margin:0;
+    width:100%;
+    /* width:1263px; */
+}
+
+#root .navbar-wrapper{
+    position:absolute;
+    z-index:10;
+    /* max-width:1263px; */
+    width:100%;
+    background-color:rgba(0,0,0,0.3);
+    padding:0;
+    margin:0 !important;
+    transition: 0.2s;
+}
+#root .app-header{
+    padding:0;
+    margin:0;
+}
+
+#root .app-header:hover{
+    background-color:rgba(0,0,0,0.4);
+}
+
+.app-title {
+    line-height: 60px;
+    vertical-align: middle;
+    font-size: 1.7em;
+}
+
+.app-branding {
+    float: left;
+}
+
+.app-options {
+    float: right;
+}
+
+.app-nav ul {
+    list-style-position: none;
+    margin: 0;
+    padding: 0;
+}
+
+.app-nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.app-nav ul li a {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: middle;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(0,0,0,0.65);
+    color: blue;
+}
+
+.app-nav ul li a:hover {
+    color: #0f96f6;
+}
+
+.app-nav ul li a.active {
+    color: #0f96f6;
+}
+
+#root .popup-content{
+    width:none;
+    border: 0px;
+    top:20%;
+}
+
+#root .navbar .app-branding{
+    color:rgb(209, 155, 155)
+}
+
+#root .navbar .app-branding div{
+    margin:0 10px 0 10px;
+}
+
+#root .navbar .app-branding input{
+    background:none;
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid #C8CCD4;
+    color:white;
+    z-index:10;
+
+    /* transform: scaleX(0);   */
+    transition: left 300ms ease-out;
+}
+
+#root .navbar .app-branding input:hover{
+    transform-origin:  0% 50%;
+    border-bottom: 1px solid rgb(104, 128, 177);
+}
+
+
+#root .navbar .app-branding input:focus{
+    background: none;
+    outline: none
+}
+
+#root .navbar .app-branding .input-label{
+    position: absolute;
+    left:3px;
+    top:-2px;
+    transition: 0.1s;
+    z-index:9
+}
+
+#root .navbar .app-branding:focus-within .input-label{
+    transform: translateY(-26px) ;
+    /* font-size:1rem; */
+    top:7px;
+}
+
+#root .navbar .search-container{
+    position:relative;
+    overflow:hidden;
+    padding: 4px;
+}
+
+.search-container .fa-search{
+    font-size:1.5rem;
+}
+
+
+/* Search bar animation custom */
+#root .navbar .search-bar{
+    position: absolute;
+    left:-500px;
+    transition: left 300ms ease-out;
+    font-size:1.2rem;
+}
+
+#root .navbar .search-container:hover .search-bar{
+   left:5px;
+}
+
+#root .navbar .search-bar:focus-within{
+    left:5px;
+}

@@ -1,0 +1,107 @@
+
+/* #root .children-wrapper{
+  width:100%;
+  min-height: 100%; 
+  position: absolute;
+  top:0;
+  background : linear-gradient(to bottom right, rgba(0, 0, 0, 1) 0%,  rgba(0, 0, 0, 0.8) 70% ,rgba(0,0,0,0.6)), url("./img/leon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+#root .children-wrapper{
+    width:100%;
+    margin:auto !important;
+    max-width: 1920px !important;
+    /* min-height: 100%;  */
+    /* position: absolute; */
+    /* top:0; */
+  }
+
+.overflow-auto{
+    overflow: auto;
+}
+#root .logo-for-movie{
+    margin: 200px 0 50px 0;
+}
+.logo-for-movie div{
+    z-index: 2;
+    text-align: center;
+    color:rgb(233, 193, 193);
+    /* font-size:1; */
+    
+}
+.logo-for-movie img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom:30px;
+}
+
+.movie-page-card img{
+    transition: .1s ease-in-out;
+}
+
+.movie-page-card img:hover{
+     transform: scale(1.2);
+}
+
+.scroll-to-top-icon i{
+    /* font-size:20px;
+    color: white; */
+}
+
+.scroll-to-top-icon{
+    animation: mymove 1s infinite ease-in;
+    position: relative;
+    font-size:50px;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes mymove{
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* mytransition */
+.mytransition-enter {
+ 
+  /* position: absolute;
+  top: 0;
+  left: calc(13% + 5px);
+  right: calc(13% + 5px);
+  opacity: 0.01;
+  transform: translateY(0%) ; */
+  }
+
+.mytransition-enter-active {
+    /* opacity: 1;
+    transform: translateY(0%);
+    transition: all 3000ms ease-in-out; */
+  }
+
+.mytransition-exit {
+    position:absolute;
+    top:0;
+    opacity: 0.5;
+    transform: translateY(0px);
+
+  }
+.mytransition-exit-active {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: all 500ms ease-in-out;
+  }
+
+  .mytransition-exit-done{
+    display:none;
+  }

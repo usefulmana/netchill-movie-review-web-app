@@ -1,0 +1,40 @@
+.movie-quick-view-box{
+    display:none;
+    position:fixed;
+    left:7%;
+    top:10%;
+    width:80%;
+    height:80%;
+    z-index:9999;
+    overflow:auto;
+}
+
+.movie-quick-view-box .close-btn{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+#root .movie-quick-view-box iframe{
+    width:100% !important;
+}
+
+/* quick view box responsive */
+/* @media screen and (max-width: 1600px) {
+    .movie-quick-view-box{
+        width:500px !important;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .movie-quick-view-box{
+        width:600px !important;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .movie-quick-view-box{
+        width:800px !important;
+    }
+} */
+

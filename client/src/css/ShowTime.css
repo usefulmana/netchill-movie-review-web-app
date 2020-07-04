@@ -1,0 +1,131 @@
+.show-time-background{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,0.6);
+    z-index:9999 !important;
+    display:none;
+}
+
+.show-time-box{
+    color:white;
+    width:80%;
+    height:80%;
+    background-image: linear-gradient(to right, rgba(0, 0, 0,1), rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0,0.4) 100%),url(./img/movie_theater.jpg);
+    /* background-image: */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    overflow:auto;
+    padding:2rem;
+    position:relative;
+}
+
+.show-city-list-box{
+    /* border: 2px solid grey; */
+    /* padding: 3rem; */
+    font-size:1.3rem;
+    transition: 0.3s ease-in-out;
+    z-index:3;
+    position:relative;
+    /* position:relative; */
+}
+
+.select-city-msg{
+    background-color:rgba(0, 0, 0, 0.7);
+    padding:0.5rem 2rem;
+}
+
+.show-city-list-box:hover .drop-down{
+    display:block;
+}
+.show-city-list-box .drop-down{
+    background:rgba(0,0,0,0.9);
+    display:none;
+    position:absolute;
+    cursor: pointer;
+    z-index:1;
+    top:100%;
+    /* left:-500px; */
+    left:-17rem;
+    width:500%;
+    font-size:1rem;
+    transition: 0.2s ease-in-out;
+}
+
+#root .show-city-list-box-active .drop-down{
+    width:170%;
+    left:-8rem;
+    font-size:1rem;
+}
+
+.show-city-list-box .drop-down div{
+    padding: 3px 6px;
+}
+
+.show-city-list-box .each-theater:hover{
+    background:rgba(83, 74, 74, 0.6);
+}
+
+
+/* date */
+.current-date-active{
+    color: red;
+    font-size:1.2rem;
+}
+
+.date{
+    font-size:1.2rem;
+    cursor: pointer;
+}
+
+/* each showtime */
+.each-show-time{
+
+}
+
+/* close btn */
+.close-btn{
+    position: absolute;
+    top:3px;
+    right:-3px;
+    z-index:3;
+}
+
+/* show city list box */
+.show-city-list-box-active{
+    transform: translateY(9rem) scale(1.5);
+    padding: 10px 30px;
+}
+
+/* show-time-initial-box */
+.show-time-initial-box{
+    color:white;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-image:  linear-gradient(to right, rgba(0, 0, 0,0.3), rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0,0.3) 100%),url(./img/cgv.jpg);
+    overflow:auto;
+    padding:2rem;
+    position:absolute;
+    z-index:2;
+    /* background-image: */
+}
+
+.show-time-initial-box img{
+    z-index:6;
+}
+
+/* theater-name */
+.theater-name{
+    font-size: 1.2rem;
+    /* padding-bottom: 0.2rem; */
+    margin-bottom:1rem;
+}
+
+.not-available-msg{
+    color: rgb(131, 32, 32);
+}

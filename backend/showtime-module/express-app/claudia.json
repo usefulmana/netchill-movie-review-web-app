@@ -1,0 +1,10 @@
+{
+  "lambda": {
+    "role": "web_crawler-executor",
+    "name": "web_crawler",
+    "region": "ap-southeast-1"
+  },
+  "api": {
+    "id": "ft7c1foodj"
+  }
+}

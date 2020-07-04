@@ -1,0 +1,11 @@
+.row.listfilm {
+    width: 70vw;
+    margin-left: 15vw;
+}
+img.liked-image {
+    border-radius: unset;
+}
+.listTitle{
+    margin-left: 15vw;
+    font-size: 25px;
+}

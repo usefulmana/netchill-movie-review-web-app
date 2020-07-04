@@ -1,0 +1,84 @@
+#root .create-review-container input{
+    background:none;
+    position: relative;
+    border: 0;
+    border-bottom:none;
+    color:white;
+    z-index:10;
+    width:100%;
+    height:50px;
+    /* font-size:16px; */
+    /* transform: scaleX(0);   */
+    transition: left 300ms ease-out;
+}
+
+#root .create-review-container img{
+    margin:4px 12px 4px 4px;
+    width:60px;
+    height:60px;
+    border-radius:50%
+}
+
+/* test */
+/*
+=====
+LEVEL 1. RESET STYLES
+=====
+*/
+
+/* .field{
+    --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #767676);
+  }
+  
+  .field__input{ 
+    background-color: transparent;
+    border-radius: 0;
+    border: none;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    font-family: inherit;
+    font-size: 1em;
+  } */
+  
+  #root .create-review-container input:focus{   
+       outline:none;
+  }
+
+  #root .create-review-container input:focus::placeholder{
+    /* color: var(--uiFieldPlaceholderColor); */
+    color:transparent;
+  }
+
+  #root .create-review-container input:focus + .separator {
+    transform: scaleX(1) translateY(-2px);   
+      opacity: 1;
+   }
+
+   #root .create-review-container:focus-within .create-review-btn{
+    display: block;
+   }
+
+  .separator {
+    height:3px;
+    width: 100%;
+    background: rgb(131, 27, 27);
+    display: block;
+    transform: scaleX(0) translateY(-2px);
+    transform-origin: 50%;
+    opacity: 0;
+    transition: all .15s linear;
+  }
+  
+  #root .create-review-btn{
+      padding: 6px 8px 6px 8px;
+      font-weight: 500;
+      display:none;
+  }
+
+  #root .totalNumOfReviews{
+      color: white;
+      /* font-size: 20px;; */
+      margin: 20px 0 20px 0;
+  }

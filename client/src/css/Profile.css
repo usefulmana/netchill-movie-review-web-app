@@ -1,0 +1,93 @@
+#root .children-wrapper {
+    /* height: 100vh; */
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 100vw;
+}
+.profile-image{
+    width: 30%;   
+}
+.profile-form{
+    width: 70%;  
+}
+img.image {
+    width: 100%;
+    height: auto;
+}
+.form-profile{
+    display: block;
+}
+.form-ele{
+    display: flex;
+    margin-right: 5vw;
+    margin-top: 3vh;
+}
+.ele-laber{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.ele-input{
+    width: 60%;
+}
+.font-size-profile{
+    font-size: 16px !important;
+}
+.full-height{
+    height: 100vh;
+}
+section#movies {
+    width: 70%;
+    margin-left: 15%;
+    color: #fff;
+}
+h3.liked_movie-title {
+    color: #000 !important;
+    padding: 10px 15px;
+}
+.col-lg-3.col-md-4.col-sm-6 {
+    margin-top: 3vh;
+}
+.btn-gradient{
+    background-image: linear-gradient(to right top, #ed433f, #df3a37, #d2302f, #c42627, #b71b1f);
+}
+article.card {
+    background-color: transparent;
+}
+a.liked_movie-title {
+    color: #fff;
+}
+button.btn.btn-link {
+    color: #fff !important;
+}
+.playlist {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    max-width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+}
+.playlist:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.playlist_title{
+    color: #fff;
+    margin-left: 10vw;
+}
+.list_title{
+    width: 90%;
+}
+.list_action{
+    width: 10%;
+}
+.linkPlaylist{
+    color: #fff;
+}

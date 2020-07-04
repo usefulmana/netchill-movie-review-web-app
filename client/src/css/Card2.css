@@ -1,0 +1,140 @@
+
+
+/* PRODUCT: CARD */
+
+#root .card-box{
+  /* z-index:100; */
+  /* font-size:12px; */
+  margin: 0 2px 0 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+ 
+  #root .card{
+    /* background-color:grey; */
+    position: relative;
+    box-shadow: 0 0 0 0;
+    overflow:hidden;
+  }
+  #root .card img{
+    /* border-radius: 8px; */
+    overflow:hidden;
+    border: 0px solid white;
+    width: 100%;
+    height:230px;
+    /* margin-left: 15px; */
+    /* transform: scale(1); */
+    transition: .1s ease-in-out;
+
+  }
+  
+  /* #root .card img:hover{
+    transform: scale(1.2);
+  } */
+
+
+  /* for rating info */
+  .card-box .rating-info{
+    padding:7px 15px 7px 15px;
+    /* font-size:13px; */
+    font-weight: 600;
+    background: linear-gradient(to right, rgba(165, 15, 15, 0.95), rgb(50, 63, 136));
+    color: white;
+    position: absolute;
+    top:-10px;
+    right:-10px;
+    z-index: 1;
+  }
+
+  .card-box .title-info{
+    text-align: center;
+    color:white;
+    /* font-size:14px; */
+    padding: 4px 0 4px 0;
+    /* font-weight: 600; */
+  }
+ 
+.card-box .open-quick-view-btn {
+    position: absolute;
+    left:-500px;
+    /* transition: all 300ms ; */
+    transition: 0.3s ease-in-out;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+    font-size:1rem;
+    /* background-color:rgb(148, 22, 53); */
+    background: linear-gradient(to right, rgba(180, 55, 55,1), rgba(180, 55, 55,1));
+
+    color:white;
+    padding: 1rem 2rem ;
+    bottom:18%;
+}
+.card-box .open-quick-view-btn i{
+  font-size:1.2rem;
+  transition: 0.2s ease-in-out
+}
+
+.card-box:hover .open-quick-view-btn{
+   left:0;
+}
+
+
+
+.card-box .quick-view-loading{
+  position: absolute;
+  width:100%;
+  left:-500px;
+  transition: left 1000ms ease-out;
+  font-size:1.2rem;
+  background-color:rgb(176, 15, 216);
+
+  /* color:black; */
+  height:4px;
+  top:0;
+  border-radius: 2%;
+}
+
+.open-quick-view-btn:hover + .quick-view-loading{
+  left:0;
+}
+
+.open-quick-view-btn:hover {
+  background: linear-gradient(to right, rgba(165, 15, 15, 0.95), rgb(50, 63, 136));
+  padding-right: 5rem;
+}
+
+.open-quick-view-btn:hover i{
+  transform: scale(1.2);
+}
+
+#root .play-text{
+  position: absolute;
+  right:2rem;
+  font-size:1.2rem;
+  /* top:40%; */
+  color:white;
+  /* display: none; */
+  transition: 1s ease-in-out !important;
+  transform-origin: 50%;
+  opacity: 0;
+}
+
+#root .open-quick-view-btn:hover .play-text{
+  display: block;
+  opacity: 1;
+
+}
+  
+  /*Filter styles: refer to this*/
+  .saturate { filter: saturate(3); }
+  .grayscale { filter: grayscale(100%); }
+  .contrast { filter: contrast(160%); }
+  .brightness { filter: brightness(0.25); }
+  .blur { filter: blur(3px); }
+  .invert { filter: invert(100%); }
+  .sepia { filter: sepia(100%); }
+  .huerotate { filter: hue-rotate(180deg); }
+  .rss.opacity { filter: opacity(50%); }
+  

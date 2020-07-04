@@ -1,0 +1,103 @@
+#root .home{
+    /* background-color:rgb(24, 22, 22); */
+    position: relative;
+}
+
+/* .page-not-found{
+    width:120%;
+    height:1500px;
+    position:absolute;
+    background-image:  linear-gradient(to right, rgba(27, 33, 44,1), rgba(27, 33, 44,0.8) 50%,  rgb(27, 33, 44, 0.5) 100%), url(./img/shawshank.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+} */
+
+/* .home .home-gradient{
+    position:absolute;
+    top:0;
+    z-index:9999;
+    width:100%;
+    height:100%;
+    right:0%;
+    background-image:  linear-gradient(to right, rgba(27, 33, 44,0.3), rgba(27, 33, 44,0.7) 50%,  rgb(27, 33, 44, 1) 100%);
+} */
+
+#root .logo-for-movie{
+    /* background-image:  linear-gradient(to right, rgba(27, 33, 44,1), rgba(27, 33, 44,1) 50%,  rgb(27, 33, 44, 1) 100%); */
+}
+
+.home-container {
+    text-align: center;
+    min-height: calc(100vh - 60px);
+    overflow: auto;
+    position: relative;
+    padding-top: 60px;
+}
+
+.home-title {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: rgba(0,0,0,0.70);
+    margin-top: 50px; 
+}
+
+.home .animated{
+    position: relative;
+}
+
+#root .label{
+    position:absolute;
+    
+    left:0px;
+    top:-6px;
+    padding: 4px 23px 4px 23px;
+    font-size:1.1rem;
+    font-weight:400;
+    transition: 250ms;
+    cursor: default;
+}
+
+#root .label-text:after {
+    display:block;
+    content: '';
+    border-bottom: solid 3px #ffffff;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+#root .label:hover .label-text:after {
+       transform: scaleX(1); 
+  }
+
+#root .label:hover{
+    padding: 4px 40px 4px 40px;
+  }
+
+
+/* background wall-paper */
+
+#root .home-background-wallpaper{
+    margin:0;
+    height:700px;
+    width:100%;
+    background-position: center; 
+    z-index: 100;
+    background-image:  linear-gradient(to right, rgba(0, 0, 0,1), rgba(0, 0, 0, 0.5) 20%, rgba(255, 255, 255,0) 100%),url(./img/netflix-background.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 100%,100%;
+}
+
+#root .home-background-wallpaper::after{
+}
+
+#root .home-background-wallpaper .wallpaper-text{
+    font-size: 1.3rem;
+    color:white;
+}
+
+.wallpaper-text .btn{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+

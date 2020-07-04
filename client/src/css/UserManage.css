@@ -1,0 +1,60 @@
+.user_manage{
+    width: 100vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: block;
+}
+.user-col{
+    display: flex;
+    margin-bottom: 1vh;
+    padding: 1vh 0;
+    border-bottom: 1px solid #fff;
+}
+.name-col{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.username-col{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-col{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action-col{
+    width: 25%;
+}
+.header-col{
+    display: flex;
+    margin-bottom: 3vh;
+}
+.laber-col{
+    width: 50%;
+    display: flex;
+}
+.right-col{
+    width: 50%;
+    display: flex;
+}
+.right-search{
+    width: 80%;
+    display: flex;
+}
+.btn-search{
+    margin-left: -90px;
+}
+.right-button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.col-laber{
+    font-size: 25px !important;
+}

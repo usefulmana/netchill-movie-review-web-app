@@ -1,0 +1,187 @@
+.login-container {
+    /* text-align: center; */
+    font-size:15px;
+    height:100%;
+    width:100%;
+}
+
+#root .login-container .btn{
+    margin-bottom: 14px;
+    box-shadow: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 0 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    height: 45px;
+    line-height: 45px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    position: relative;
+    color: rgba(0,0,0,.65);
+    background-color: transparent;
+    border-color: #e8e8e8;
+    outline: none;
+    text-transform: none;
+}
+
+.login-container .or-separator{
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    position: relative;
+    display: block;
+    margin-top: 7px;
+    margin-bottom: 35px;
+    font-size: 1em;    
+}
+
+.login-content {
+    background: #fff;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 33%;
+    /* height:42rem; */
+    display: inline-block;
+    margin-top: 30px;
+    vertical-align: middle;
+    position: relative;    
+    padding: 35px;
+}
+
+.social-btn {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.social-btn img {
+    height: 32px;
+    float: left;
+    margin-top: 10px;
+}
+
+.social-btn.google {
+    margin-top: 7px;
+}
+
+.social-btn.facebook img {
+    height: 24px;
+    margin-left: 3px;
+}
+
+.social-btn.github img {
+    height: 24px;
+    margin-left: 3px;
+}
+
+.signup-link a{
+    /* color: rgba(0, 0, 0, 0.65); */
+    font-size: 1rem;
+}
+
+.login-title {
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+
+#root .login-container .form-item{
+    margin-bottom: 14px;
+}
+
+/* CUSTOMIZATION */
+ .left-content{
+    background:red;
+}
+
+#root .login-container .signin-link{
+    color:rgb(38, 24, 112);
+    font-size:1.5rem;
+    margin:0.5rem;
+}
+
+#root .login-container .signup-link{
+    color:rgb(211, 190, 190) !important;
+    font-size:1.1rem;
+    text-decoration: none;
+}
+
+.slash-seperator{
+    color:rgb(211, 190, 190);
+    font-size:1.5rem;
+}
+
+.social-login-box{
+    border-left: 0.9px solid rgba(54, 37, 37, 0.7);
+}
+.social-login-box .or-seperator{
+    position: absolute;
+    left:-2%;
+    top:50%;
+    background-color:White;
+}
+
+.my-modal-container .text{
+    font-size:1rem;
+    color:black;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.google{
+    background-color: rgba(225, 227, 238,0.5) !important;
+    color: black !important;
+}
+
+#root .facebook{
+    background-color: rgba(34, 63, 226, 0.7) !important;
+    color: white !important;
+}
+
+.github{
+    background-color: rgba(40, 40, 43, 0.8) !important;
+    color: white !important;
+}
+
+.right-content{
+    /* background-image:  linear-gradient(to right, rgba(255, 255, 255,0.05), rgba(255, 255, 255, 0.05)),url(../../css/img/login-background.jpg); */
+    /* background-color:rgb(240, 233, 223); */
+
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}
+
+.left-content{
+    color:white;
+    font-size:0.8rem;
+}
+
+.left-content img{
+    width:50%;
+    /* height:300px; */
+    height:300%;
+    border-radius: 50%;
+
+}
+
+.left-content{
+    background-image:  linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../../css/img/lala.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: cover;
+}

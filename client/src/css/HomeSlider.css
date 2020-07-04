@@ -1,0 +1,66 @@
+#root .home-slider-movie{
+    color:black;
+    background-color:white;
+    height:560px;
+    border:none;
+
+}
+
+#root .home-slider .joker{
+    background-image:  linear-gradient(to right, rgba(0, 0, 0,1), rgba(0, 0, 0, 0.5) 60%, rgba(255, 255, 255,0) 100%),url(./img/joker.jpg);
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+/* slick dot customization */
+#root .home-slider .slick-dots{
+    bottom:-25px;
+}
+#root .home-slider .slick-dots button:before{
+    color:white;
+    font-size:0.8rem;
+    /* opacity: 1; */
+    /* z-index: 300; */
+}
+
+#root .home-slider .slick-arrow{
+    z-index: 2000;
+}
+
+#root .home-slider .slick-prev{
+    left:10px;
+}
+
+#root .home-slider .slick-prev::before{
+    content: "\f053";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; /* Fix version 5.0.9 */
+    /* color:rgb(180, 134, 134); */
+    font-size:2rem;
+    color:white;
+
+    left:0;
+}
+
+#root .home-slider .slick-next{
+    right:23px;
+}
+
+#root .home-slider .slick-next::before{
+    content: "\f054";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; /* Fix version 5.0.9 */
+    /* color:rgb(180, 134, 134); */
+    color:white;
+    right:-20px;
+    font-size:2rem;
+}
+
+#root .slick-slide{
+    z-index:10
+}
+
+#root .slick-active{
+    z-index:20
+}
+

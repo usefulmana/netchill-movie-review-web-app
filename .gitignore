@@ -1,0 +1,11 @@
+*.env
+application.yml
+node_modules/
+.vscode/
+.idea/
+*.sql
+build/
+package-lock.json
+*.lock
+*.jar
+target/

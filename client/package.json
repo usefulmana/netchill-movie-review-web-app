@@ -1,0 +1,61 @@
+{
+  "name": "my-web-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/react-transition-group": "^4.2.3",
+    "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
+    "braintree-web": "^3.50.0",
+    "braintree-web-drop-in-react": "^1.0.10",
+    "dotenv": "^8.0.0",
+    "fs": "0.0.1-security",
+    "fs-react": "0.0.4",
+    "hoverintent": "^2.2.1",
+    "hoverintent-jqplugin": "^0.2.1",
+    "jquery": "^3.4.1",
+    "moment": "^2.24.0",
+    "node-sass": "^4.13.0",
+    "query-string": "^6.8.2",
+    "react": "^16.8.6",
+    "react-alert": "^6.0.0",
+    "react-alert-template-basic": "^1.0.0",
+    "react-animate-on-scroll": "^2.1.5",
+    "react-animations": "^1.0.0",
+    "react-awesome-modal": "^2.0.5",
+    "react-dom": "^16.8.6",
+    "react-element-to-jsx-string": "^14.0.3",
+    "react-router-dom": "^5.0.1",
+    "react-s-alert": "^1.4.1",
+    "react-scripts": "3.0.1",
+    "react-show-more": "^2.0.0",
+    "react-slick": "^0.25.2",
+    "react-transition-group": "^4.3.0",
+    "reactjs-popup": "^1.5.0",
+    "semantic-ui-react": "^0.88.1",
+    "use-react-modal": "0.0.9",
+    "yarn": "^1.17.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "aws s3 sync build/ s3://cc-a2-client --acl public-read"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

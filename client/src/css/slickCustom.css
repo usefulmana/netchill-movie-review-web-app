@@ -1,0 +1,130 @@
+.customized-carousel .slick-slide, img{
+    transition: 0.4s ease-in-out;
+}
+.customized-carousel .slick-slide{
+    transition: 0.4s ease-in-out;
+
+}
+
+/* Slick slider customizatoin */
+/* when one element in carousel is hovered, it scales up and all other elements aligns center */
+/* 1. give static height to slick-list */
+/* 2. when card is hover, slick-slide and image height and width increase */
+#root .customized-carousel .slick-slide:hover img{
+    width:300px !important;
+    height:390px !important;
+}
+
+
+.customized-carousel .slick-slide:hover {
+    width:330px !important;
+}
+
+.customized-carousel .slick-list {
+    display: flex; 
+    align-items: center;
+    height:390px; /*this height should be greater than A1, otherwise it will be flown hidden*/
+}
+
+.customized-carousel .slick-track {
+    display: flex;
+    align-items: center;
+  }
+
+
+/* Responsive design */
+/*documention of slick-slide customization*/
+@media screen and (max-width: 1600px) {
+    #root .customized-carousel .slick-slide:hover img{
+        width:230px !important;
+        height:260px !important;
+    }
+    
+    .customized-carousel .slick-slide:hover {
+        width:230px !important;
+    }
+    
+    /*  img element height increase to 260px on hover and 30px added from title div  */
+    /* so slick-list element'height should be at least 260px+30px to prevent overflow-hidden */
+    .customized-carousel .slick-list {
+        height:290px; /*this height should be greater than A1, otherwise it will be flown hidden*/
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #root .customized-carousel .slick-slide:hover img{
+        width:300px !important;
+        height:350px !important;
+    }
+    
+    .customized-carousel .slick-slide:hover {
+        width:300px !important;
+    }
+    
+    .customized-carousel .slick-list {
+        height:380px; /*this height should be greater than A1, otherwise it will be flown hidden*/
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #root .customized-carousel .slick-slide:hover img{
+        width:330px !important;
+        height:390px !important;
+    }
+  
+    .customized-carousel .slick-slide:hover {
+        width:330px !important;
+        /* height:420px; */
+    }
+    
+    .customized-carousel .slick-list {
+        height:460px; /*this height should be greater than A1, otherwise it will be flown hidden*/
+    }
+}
+
+
+/* image responsive */
+@media screen and (min-width: 1280px) {
+    .card img{
+        height:220px !important;
+    }
+
+    .card-box{
+        margin:0px 7px !important;
+    }
+
+    iframe{
+        /* width: 500px; */
+        height:400px !important;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .card img{
+        height:300px !important;
+    }
+
+    .card-box{
+        margin:0px 7px !important;
+    }
+
+    iframe{
+        /* width: 500px; */
+        height:500px !important;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .card img{
+        height:330px !important;
+    }
+
+    .card-box{
+        margin:0px 7px !important;
+    }
+
+    iframe{
+        /* width: 500px; */
+        height:590px !important;
+    }
+}

@@ -1,0 +1,73 @@
+.user-playlists-box{
+    display: flex;
+    justify-content: center;
+    color:white;
+    padding-top:5rem;
+    padding-bottom:5rem;
+
+    &>div {
+        width:70%;
+    }
+
+    .user-name{
+        font-size:1.6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.each-playlist{
+    // padding:1.5rem 2rem;
+    width:100%;
+    margin-bottom:0.3rem;
+    background-color: rgba(26, 26, 29,0.7);
+    position: relative;
+    color:white;
+    font-size:1.5rem;
+    // padding-left:20%;
+    text-align: center;
+
+    &> div{
+        padding:1.5rem 2rem;
+    }
+
+    input{
+        outline: none;
+        background:none;
+        border:none;
+        color:inherit;
+        width:100%;
+        text-align: center;
+    }
+
+    .delete-btn{
+        font-size:1.5rem;
+        margin-left:0.7rem;
+        cursor: pointer;
+    }
+
+    .icon-box{
+        // position: absolute;
+        // right:10%;
+        // height:100%;
+        // width:10%;
+        // top:0;
+    }
+
+    .go-btn{
+        background-color:rgba(48, 42, 42, 1);
+        // position: absolute;
+        // left:0;
+        // top:0;
+        border-bottom-left-radius: 0.845rem;
+        border-top-left-radius: 0.845rem;
+        height:100%;
+        width:10%;
+        cursor: pointer;
+    }
+
+    .edit-btn{
+        cursor: pointer;
+    }
+
+
+}

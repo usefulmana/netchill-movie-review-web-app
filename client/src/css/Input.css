@@ -1,0 +1,119 @@
+
+/* form css */
+.search-form {
+	border:2px solid rgba(255,255,255,.5);
+	font-size:1.3em;
+	color:rgba(255,255,255,.5);
+    border-radius:.25em;
+    line-height: 1.5;
+	background:transparent;
+	transition:all .100s;
+}
+
+.search-form:focus-within {
+    /* outline:none; */
+	color:rgba(255,255,255,.75);
+	border-color:rgba(255,255,255,.75);
+}
+
+/* input css */
+.search-form input{
+	border:none;
+	font-size:0.9em;
+	padding-left:8px;
+	color:rgba(255,255,255,.5);
+	background:transparent;
+	transition:all .100s;
+	outline:none;
+}
+
+.search-form {
+	font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+}
+
+.search-form input::-webkit-input-placeholder {
+	color:$placeholder-color;
+	text-shadow:0 0 .125em transparent;
+	transition:all .25s;
+}
+.search-form input:focus::-webkit-input-placeholder {
+	opacity:.5;
+}
+
+.search-form input::-moz-placeholder {
+	color:$placeholder-color;
+	text-shadow:0 0 .125em transparent;
+	transition:all .25s;
+}
+.search-form input:focus::-moz-placeholder {
+	opacity:.5;
+}
+
+.search-form input:-ms-input-placeholder {
+	color:$placeholder-color;
+	text-shadow:0 0 .125em transparent;
+	transition:all .25s;
+}
+.search-form input:focus:-ms-input-placeholder {
+	opacity:.5;
+}
+
+#root .search-form .fa-search{
+    color:rgba(255,255,255,.5);
+	font-size: 1.3rem;
+	margin:0;
+	padding-right:9px;
+}
+
+/* customized select box with div*/
+#root .search-form .select{
+	position: relative;;
+    color:rgba(255,255,255,.5);
+	border:none;
+	border-right:2px solid rgba(255,255,255,.5);
+	padding:5px 3px 5px 8px;
+	color:rgba(255,255,255,.5);
+	background:transparent;
+	transition:all .100s;
+	cursor: pointer;
+	width:100px;
+}
+
+.search-form .select:focus{
+	outline: none;
+}
+.search-form .select-items {
+	color:rgba(255,255,255,1);
+	border-radius:.25em;
+    background:rgba(0,0,0,0.8);
+	transition:all .100s;
+	
+}
+
+.search-form .select-items:hover{
+	background-color:rgba(184, 151, 151,0.8);
+
+}
+
+.search-form .select .drop-down{
+	display: none;
+	position: absolute;
+	top:100%;
+	left:0;
+	z-index: 2000;
+	cursor: pointer;
+	border:2px solid rgba(255,255,255,.5);
+    border-radius:.25em;
+}
+
+/* .search-form .select .drop-down-active{
+	display: block;
+} */
+
+.search-form .select:hover .drop-down{
+	display: block;
+}
+
+.search-form .select-items{
+	padding:7px 17px;
+}

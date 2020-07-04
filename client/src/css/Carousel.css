@@ -1,0 +1,22 @@
+#root .slick-arrow{
+    height:100%;
+    width:17px;
+}
+
+
+
+#root .slick-prev::before{
+    content: "\f053";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; /* Fix version 5.0.9 */
+    color:white;
+    font-size:2rem;
+}
+
+#root .slick-next::before{
+    content: "\f054";
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900; /* Fix version 5.0.9 */
+    color:white;
+    font-size:2rem;
+}

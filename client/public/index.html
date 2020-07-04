@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/img/logo-image.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+  <!-- MD, BOOTSTRAP, CSS -->
+  <!-- Font Awesome -->
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> -->
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <!-- <link href="%PUBLIC_URL%/css/bootstrap.min.css" rel="stylesheet"> -->
+  <!-- MDB CSS -->
+  <!-- <link href="%PUBLIC_URL%/css/mdb.min.css" rel="stylesheet"> -->
+
+  <!-- Your custom styles (optional) -->
+  <link href="%PUBLIC_URL%/css/style.css" rel="stylesheet">
+
+  <!-- MDB PRO -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+    integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link href="%PUBLIC_URL%/css/mdbpro.min.css" rel="stylesheet">
+
+  <!-- slick -->
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="%PUBLIC_URL%/slick/slick-theme.css" />
+
+  <!-- animate.css -->
+  <!-- https://www.npmjs.com/package/animate.css/v/3.7.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
+  <!-- semantic ui -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+  <title>Netflix&Chill</title>
+</head>
+
+<body class="p-0">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <!-- original setting -->
+  <!-- MD JS, JQuery -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="%PUBLIC_URL%/js/jquery-3.4.1.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="%PUBLIC_URL%/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="%PUBLIC_URL%/js/mdbpro.min.js"></script>
+  <script type="text/javascript" src="%PUBLIC_URL%/js/mdb.min.js"></script>
+
+  <!-- MDP PRO -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/previews/docs/latest/js/mdb.min.js"></script>
+  <script type="text/javascript" src="%PUBLIC_URL%/js/mdbpro.min.js"></script>
+
+  <!-- slick -->
+  <script type="text/javascript" src="%PUBLIC_URL%/slick/slick.min.js"></script>
+
+  <!-- shake effect is available from jqueyr UI -->
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+
+  <script>
+    $(document).ready(function () {
+      var a =document.querySelector('.multi-item-slick')
+      var b =document.querySelector('.slick-container')
+      console.log(a,b)
+      $('.multi-item-slick .slick-container').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+    });
+
+  </script>
+</body>
+
+</html>

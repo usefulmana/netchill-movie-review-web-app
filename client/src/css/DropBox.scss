@@ -1,0 +1,131 @@
+.drop-box{
+    color:white;
+    padding: 0.3rem;
+    width:20%;
+    // height:100px;
+    overflow: auto;
+    height:60%;
+    padding:0rem 2rem;
+    background-color: rgba(34, 12, 12, 0.95);
+    border-radius: 0.845rem;
+    transition: 0.1s ease-in-out;
+    // transform: translateX(-100%);
+    transform: translateX(200%);
+    position: fixed;
+    z-index: 9999;
+    right:2%;
+    top:30%;
+
+    .close-btn{
+        position:absolute;
+        top:3%;
+        right:3%;
+        font-size:1.5rem;
+        cursor: pointer;
+    }
+
+   
+}
+
+.drop-box-active{
+    animation-name: alert;
+    animation-duration: 0.3s;
+    transform: translateX(0);
+
+    @keyframes alert{
+        from{
+            transform: translateX(200%);
+        }
+        to{
+            transform: translateX(0)
+        }
+    }
+}
+
+
+.add-new-list{
+    position:relative;
+    span{
+        // content:'+';
+        font-size:2rem;
+        position: absolute;
+        display:block;
+        top:27%;
+        left:46%;
+        z-index:-1;
+        color : rgb(209, 155, 155);
+
+    }
+
+    &:focus-within span{
+        // content:'';
+        opacity:0;
+    }
+
+    .my-input{
+        border: 2px ;
+        width:95%;
+        text-align: center;
+        padding:0.3rem 0.3rem;
+        margin:0.4rem;
+        // color:black;
+        font-size:1.2rem;
+        border-radius: 0.845rem;
+        border-style: dashed;
+        outline: none;
+        background:none;
+        position: relative;
+        color : rgb(209, 155, 155);
+        transition: 0.2s ease-in-out;
+    
+        &:focus{
+            border-color: rgb(231, 206, 206);
+        }
+    }
+}
+
+
+
+.movie-list-box{
+    text-align: center;
+    background-color:rgba(77, 53, 53, 0.897);
+    padding:0.4rem;
+    margin:0.4rem;
+    border-radius: 0.845rem;
+    font-size: 1.2rem;
+    color:white;
+
+    a{
+        text-decoration:none;
+        color:inherit;
+    }
+}
+
+.drop-box .card-box{
+    width:10%;
+}
+
+.progress-wave::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    
+    background: #FFFFFF;
+    border-radius: inherit;
+    animation: progress-active 1s ease ;
+
+    @keyframes progress-active {
+        0% {
+          opacity: 0.3;
+          width: 0;
+        }
+        100% {
+          opacity: 0;
+          width: 100%;
+        }
+      }
+  }

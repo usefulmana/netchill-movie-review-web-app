@@ -1,0 +1,154 @@
+.movie_manage{
+    width: 100vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    display: block;
+}
+.movie-col{
+    display: flex;
+    margin-bottom: 1vh;
+    padding: 1vh 0;
+    border-bottom: 1px solid #fff;
+}
+.id-col{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.name-col{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.genre-col{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.des-col{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-col{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action-col{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-col{
+    display: flex;
+    margin-bottom: 3vh;
+}
+.laber-col{
+    width: 50%;
+    display: flex;
+}
+.right-col{
+    width: 50%;
+    display: flex;
+}
+.right-search{
+    width: 80%;
+    display: flex;
+}
+.btn-search{
+    margin-left: -90px;
+}
+.right-button{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+.col-laber{
+    font-size: 25px !important;
+}
+.new-movie{
+    border: 1px solid #fff;
+    margin: 5vh 0;
+    padding: 3vh 3vh;
+}
+.new-col{
+    display: flex;
+    padding-top: 3vh;
+}
+.new-head-left{
+    width: 70%;
+    display: flex;
+}
+.new-head-right{
+    width: 30%;
+    display: flex;
+    margin-left: 2vw;
+}
+.new-left{
+    width: 50%;
+    display: flex;
+}
+.new-right{
+    width: 50%;
+    display: flex;
+}
+.new-full{
+    width: 100%;
+    display: flex;
+}
+.laber-head-content{
+    width: 27.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-head-content{
+    width: 100%;
+    display: flex;
+}
+.laber-content{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-content{
+    width: 70%;
+    display: flex;
+}
+.laber-content-full{
+    width: 15%;
+}
+.content-content-full{
+    width: 85%;
+}
+li.page-item {
+    background-color: rgb(0,0,0, 0.5);
+}
+.pagination .page-item.disabled .page-link{
+    color: #212529;
+}
+.pagination .page-item .page-link{
+    color: #868e96;
+}
+
+.pagination .page-item.info.disabled .page-link{
+    color: #868e96;
+}
+.pagination .page-item.perpage.disabled .page-link{
+    color: #868e96;
+}
+li.page-item.info.disabled {
+    margin-left: 2vw;
+}
+li.page-item.perpage.disabled {
+    margin-right: 2vw;
+}

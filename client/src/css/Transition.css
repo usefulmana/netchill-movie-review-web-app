@@ -1,0 +1,18 @@
+/* 
+#root .mytransition-enter-active{
+    opacity: 0.5 !important;
+    transform: scaleY(-40px) !important;
+}
+
+#root .mytransition-enter-done{
+    opacity: 1 !important;
+    transition: 0.7s ease-in-out !important;
+}
+
+#root .mytransition-exit-active{
+    display:none !important;
+}
+
+#root .mytransition-exit{
+    display:none !important;
+} */

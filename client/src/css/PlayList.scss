@@ -1,0 +1,31 @@
+.playList-box{
+    position: relative;
+    padding-top:7rem;
+    width:80%;
+    margin: auto;
+
+
+    .deletee-btn{
+        position: absolute;
+        right:0.3rem;
+        top:-1.3rem;
+        font-size:1.3rem;
+        color:red;
+        cursor: pointer;
+        z-index:1;
+    }
+
+    .movie-title{
+        font-size:0.9rem !important;
+        margin-bottom:0.6rem;
+    }
+    .list-title{
+        color:rgb(216, 184, 184);
+        font-size:2rem;
+        margin-bottom: 2rem;
+    }
+
+    .playList{
+        height:23rem;
+    }
+}

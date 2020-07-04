@@ -1,0 +1,108 @@
+html{
+    /* font-size:20px; */
+}
+
+#root {
+    position: relative;
+}
+
+body {
+    /* max-width: 1920px !important; */
+    min-width: 1250px !important;
+    /* margin:auto; */
+    /* overflow:hidden; */
+    background : linear-gradient(to bottom right, rgba(0, 0, 0, 1) 0%,  rgba(0, 0, 0, 0.8) 70% ,rgba(0,0,0,0.6)), url("../src/css/img/leon.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+body{
+    overflow:auto;
+    min-width:1260px;
+}
+
+#root .children-wrapper {
+    /* background: rgba(0, 0, 0, 0.95 ); */
+    /* z-index:-2; */
+    position: relative;
+}
+
+.row{
+    margin:0
+
+}
+
+#root .showError{
+    top:100%;
+    left:4px;
+    color:red;
+    font-size : 14px;
+}
+
+#root select{
+    display:block !important;
+}
+
+#root .no-access-img{
+    width:100%;
+    
+}
+
+#root .admin-category-manage button{
+    font-size:11px;
+}
+
+/* Product carousel on Home page */
+#root .product-carousel {
+    border-top: 2px solid grey;
+    border-bottom: 2px solid grey;
+}
+
+#root .product-carousel .left-btn{
+    position: absolute;
+    left:-3%;
+    top:45%;
+}
+
+#root .product-carousel .right-btn{
+    position: absolute;
+    right:-3%;
+    top:45%;
+}
+
+/* Contact */
+#root .contact-background-img{
+    position: relative;
+}
+
+#root .contact-background-img::after{
+    background-image: url("/img/background.jpg"); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    content: "";
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+#root .contact-background-img input, #root .contact-background-img textarea{
+    border-bottom: 1px solid rgb(111, 111, 211);
+}
+
+/* overwrite bootstrap navbar style */
+#root .navbar{box-shadow: 0 0 0 0}
+#root .navbar-wrapper{
+    box-shadow:  0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 10px 0 rgba(0, 0, 0, 0.19);  
+}
+
+
+

@@ -1,0 +1,189 @@
+.my-dropdown-box{
+    position: relative;
+    color: white;
+    .my-dropdown{
+        position:absolute;
+        top:100%;
+        left:0;
+        display:none;
+    }
+
+    &:hover .my-dropdown{
+        display:block
+    }
+}
+
+/*----------
+alert
+-----------*/
+
+.my-alert{
+    // transform: translateX(-100%);
+    transition: 1s ease-in-out;
+    transform: translateX(-100%);
+}
+
+.my-alert-active{
+    animation-name: alert;
+    animation-duration: 1s;
+    transform: translateX(0);
+
+    @keyframes alert{
+        from{
+            transform: translateX(-100%);
+        }
+        to{
+            transform: translateX(0)
+        }
+    }
+}
+
+/*----------
+pop-up
+-----------*/
+
+.my-popup-box{
+    position: relative;
+    cursor: pointer !important;
+
+    .my-popup{
+        border-radius: 0.28571429rem;
+        display:none;
+        text-transform: none;
+        position: absolute;
+        font-size:1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        bottom:130%;
+        width:260%;
+        padding: 0.5rem 0.5rem ;
+        animation: popup 0.5s ;
+        background-color:rgb(95, 98, 238);
+
+        &:after{
+            content:'';
+            display:block;
+            width:0;
+            height:0;
+            position:absolute;
+            border-radius: 1%;
+        
+            border-left: 0.7rem solid transparent;
+            border-right: 0.7rem solid transparent;
+            border-top:1.1rem solid rgb(95, 98, 238);
+            // left:-8px;
+            // top:7px;
+            top:100%;
+        }
+    }
+
+    &:hover .my-popup{
+        display:block;
+    }
+
+   
+
+    @keyframes popup{
+        from{
+            transform: scale(0.8);
+        }
+        to{
+            transform: scale(1)
+        }
+    }
+}
+
+/*----------
+progress-wave
+-----------*/
+
+.infinite-progress-wave::after {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #FFFFFF;
+    border-radius: 0.28571429rem;
+    animation: progress-active 2s ease infinite;
+
+    @keyframes progress-active {
+        0% {
+          opacity: 0.3;
+          width: 100%;
+        }
+        100% {
+          opacity: 0;
+          width: 100%;
+        }
+      }
+  }
+
+/*-------------------------------------------------------------------------
+ALERT : slide from right pop up with close btn
+            <div className="my-alert my-alert-active">
+                [your mesasge]
+                <i class="fas fa-times" onClick={closeAlert}></i>
+            </div>
+
+            const closeAlert = () => {
+        document.querySelector('.my-alert').classList.remove('my-alert-active')
+---------------------------------------------------------------------------*/
+.my-alert{
+    transform: translateX(200%);
+    transition: 1s ease-in-out;
+    position:fixed;
+    width: 30%;
+    top:40%;
+    z-index:3;
+    /* height: 10%; */
+    padding :1rem;
+    right: 5%;
+    border-radius: 0.184rem;
+    background-color:rgb(92, 92, 124);
+    color: white;
+    font-size:1.5rem;
+    line-height: 2rem;
+
+    &:after{
+        content:'';
+        display:block;
+        width:0;
+        height:0;
+        position:absolute;
+        border-radius: 1%;
+        border-top: 0.7rem solid transparent;
+        border-bottom: 0.7rem solid transparent;
+        border-left:1.1rem solid rgb(92, 92, 124);
+        left:100%;
+        top:20%;
+    }
+
+    .close-btn{
+        z-index:4;
+        position: absolute;
+        top:10%;
+        right:3%;
+        color:white;
+        cursor: pointer;
+      }
+  }
+  
+  .my-alert-active{
+    animation-name: alert;
+    animation-duration: 1s;
+    transform: translateX(0);
+  }
+  
+  @keyframes alert{
+    from{
+        transform: translateX(200%);
+        opacity: 0.5;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+  }
+//   wefa

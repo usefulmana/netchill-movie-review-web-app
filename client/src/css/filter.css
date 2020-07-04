@@ -1,0 +1,83 @@
+
+/* COMMON USE */
+#root .filter{
+    /* background: linear-gradient(40deg, #9bccdb, #6ccdda); */
+
+	border:2px solid rgba(255,255,255,.5);
+	/* font-size:1.3em; */
+	color:rgba(255,255,255,.5);
+    border-radius:.25em;
+
+    /* color:white; */
+    /* font-size:1rem; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    padding: 7px 30px 7px 30px;
+    transition:0.2s;
+}
+
+#root .filter:hover{
+    border:2px solid rgba(255,255,255,.7);
+	color:rgba(255,255,255,.7);
+}
+
+/* drop down effect */
+#root .filter-dropdown{
+    background:rgba(0,0,0,0.8);
+    display: none;
+    position: absolute;
+    top:100%;
+    left:0;
+    color: black;
+    border: 2px solid grey;
+    /* text-align:center; */
+    /* background-color:white; */
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,.16),
+    0 6px 22px 0 rgba(0,0,0,.12);
+    z-index: 9999
+}
+
+#root .dropdown-item{
+    display: flex;
+    align-items: center;
+    padding-right:50px;
+    color:white;
+    margin:0;
+}
+
+#root .dropdown-item:hover {
+    background-color:rgba(184, 151, 151,0.8);
+}
+
+#root .dropdown-item-active{
+    border-left: 4px solid red;
+    color:red
+}
+
+#root .filter-checkbox{
+    color: rgb(233, 208, 208);
+    position: absolute;
+    right:15px;
+    background-color: rgb(239, 238, 245);
+    padding: 3px;
+}
+
+#root .filter-checkbox-active {
+    color:rgb(15, 211, 25)
+}
+
+/* CATEGORY */
+#root .category-filter{
+}
+
+#root .category-filter:hover .category-filter-dropdown{
+    display: block;
+}
+
+#root .category-filter-dropdown-item{
+    width:200px;
+}
+
+

@@ -1,0 +1,67 @@
+#root .my-modal-content{
+ margin-top:30px;
+ margin-bottom:30px;
+ height:70%;
+ width:80%;
+}
+
+.root-modal-active{
+    overflow-y:hidden;
+}
+
+#root .modal-active{
+    display: flex;
+}
+
+#root .my-modal-container{
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:9999;
+    padding:0;
+    margin:0;
+    background-color:rgba(0, 0, 0, 0.7);
+    overflow-y:auto;
+    overflow-x:hidden;
+    display:none;
+}
+
+/* custom login and signup modal */
+.login-modal-deactive{
+    display:none !important;
+}
+
+.login-modal-active{
+    display:flex !important;
+}
+
+/* custom second */
+.signup-modal-deactive{
+    display:none !important;
+}
+
+.signup-modal-active{
+    display:flex !important;
+}
+
+/* custom scvroll bar */
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/* border-radius: 10px; */
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+    background-color: #555;
+    background: rgba(219, 182, 182, 0.808);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "theater-bot",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "theaterBot.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "fs-extra": "^9.0.0",
+    "mongoose": "^5.9.12",
+    "puppeteer": "^3.0.3",
+    "querystring": "^0.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
